@@ -1,18 +1,18 @@
 -- component wrapper:
-ftd.image-src avatar_logo:
-optional ftd.image-src new_post_img:
+ftd.image-src avatar-logo:
+optional ftd.image-src new-post-img:
 string username:
-string notify_message:
-optional string highlight_notify_message:
-optional string notify_description:
+string notify-message:
+optional string highlight-notify-message:
+optional string notify-description:
 string duration:
-optional boolean notify_description_message: false
-boolean is_new_notification: false
-boolean is_group_notification: false
+optional boolean notify-description-message: false
+boolean is-new-notification: false
+boolean is-group-notification: false
 
 -- ftd.container:
 padding.px: 20
-background.solid if {wrapper.is_new_notification}: hsl(211, 68%, 94%)
+background.solid if {wrapper.is-new-notification}: hsl(211, 68%, 94%)
 border-radius.px: 8
 cursor: pointer
 max-width.fixed.px: 800
@@ -24,7 +24,7 @@ align-self: center
 spacing.fixed.px: 20
 
 -- ftd.image:
-src: $wrapper.avatar_logo
+src: $wrapper.avatar-logo
 width.fixed.px: 50
 border-radius.percent: 100
 
@@ -47,16 +47,16 @@ if: {wrapper.username != NULL}
 role: $inherited.types.copy-regular
 style: bold
 
--- ftd.text: $wrapper.notify_message 
-if: {wrapper.notify_message != NULL}
+-- ftd.text: $wrapper.notify-message 
+if: {wrapper.notify-message != NULL}
 role: $inherited.types.copy-regular
 
--- ftd.text: $wrapper.highlight_notify_message
-if: {wrapper.highlight_notify_message != NULL}
+-- ftd.text: $wrapper.highlight-notify-message
+if: {wrapper.highlight-notify-message != NULL}
 role: $inherited.types.copy-regular
 style: bold
-color if {wrapper.is_group_notification }: #0E4C92
-color if {!wrapper.is_group_notification }: #36454F
+color if {wrapper.is-group-notification }: #0E4C92
+color if {!wrapper.is-group-notification }: #36454F
 
 -- ftd.container: 
 width.fixed.px: 10
@@ -80,15 +80,15 @@ margin-top.px: -3
 -- end: ftd.column
 
 -- ftd.image:
-if: {wrapper.new_post_img != NULL}
-src: $wrapper.new_post_img
+if: {wrapper.new-post-img != NULL}
+src: $wrapper.new-post-img
 width.fixed.px: 50
 border-radius.px: 10
 
 -- end: ftd.row
 
--- ftd.text: $wrapper.notify_description
-if: {wrapper.notify_description != NULL}
+-- ftd.text: $wrapper.notify-description
+if: {wrapper.notify-description != NULL}
 padding.px: 15
 role: $inherited.types.copy-regular
 color: gray
