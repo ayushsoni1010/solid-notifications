@@ -2,7 +2,7 @@
 ftd.image-src avatar-logo:
 optional ftd.image-src new-post-img:
 string username:
-string notify-message:
+optional string notify-message:
 optional string highlight-notify-message:
 optional string notify-description:
 string duration:
@@ -59,6 +59,7 @@ color if {wrapper.is-group-notification }: #0E4C92
 color if {!wrapper.is-group-notification }: #36454F
 
 -- ftd.container: 
+if: { wrapper.is-new-notification == true}
 width.fixed.px: 10
 height.fixed.px: 10
 background.solid: red
