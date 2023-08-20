@@ -1,12 +1,66 @@
 -- import: ayushsoni1010.github.io/solid-notifications/components/notification as notification
 
+-- ftd.column:
+spacing.fixed.px: 7
+
 -- notification.wrapper:
-avatar_logo: $assets.files.assets.images.avatar-mark-webber.jpg
+avatar-logo: $assets.files.assets.images.avatar-mark-webber.jpg
 username: Mark Webber
-notify_message: reacted to your recent post
-highlight_notify_message: My first toournament today!
+notify-message: reacted to your recent post
+highlight-notify-message: My first toournament today!
 duration: 1m ago
-is_new_notification: false
-notify_description: Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
-new_post_img: $assets.files.assets.images.image-chess.jpg
+is-new-notification: true
+is-group-notification: false
+
+-- notification.wrapper:
+avatar-logo: $assets.files.assets.images.avatar-angela-gray.jpg
+username: Angela Gray
+highlight-notify-message: followed you
+duration: 5m ago
+is-new-notification: true
+
+-- notification.wrapper:
+avatar-logo: $assets.files.assets.images.avatar-jacob-thompson.jpg
+username: Jacob Thompson
+notify-message: has joined your group
+highlight-notify-message: Chess Club
+duration: 1day ago
+is-new-notification: true
+is-group-notification: true
+
+-- notification.wrapper:
+avatar-logo: $assets.files.assets.images.avatar-mark-webber.jpg
+username: Rizky Hasanuddin
+notify-message: sent you a private message
+duration: 1 days ago
+is-new-notification: false
+is-group-notification: true
+notify-description: Hello, thanks for setting up the Chess Club. I've been a member for few weeks now and I'm already having lots of fun and improving my game.
+
+-- notification.wrapper:
+avatar-logo: $assets.files.assets.images.avatar-kimberly-smith.jpg
+new-post-img: $assets.files.assets.images.image-chess.jpg
+username: Kimberly Smith
+notify-message: commented on your picture
+duration: 1week ago
+is-new-notification: false
+
+-- notification.wrapper:
+avatar-logo: $assets.files.assets.images.avatar-nathan-peterson.jpg
+username: Nathan Peterson
+notify-message: reacted to your recent post
+highlight-notify-message: 5 end-game strategies to Increase your win rate
+duration: 2 weeks ago
+is-new-notification: false
+
+-- notification.wrapper:
+avatar-logo: $assets.files.assets.images.avatar-anna-kim.jpg
+username: Anna Kim
+notify-message: left the group
+highlight-notify-message: Chess Club
+duration: 2 weeks ago
+is-new-notification: false
+is-group-notification: true
+
+-- end: ftd.column
 
